@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>药物相互作用查询</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>药物相互作用查询</h1>
+      <p>输入两种药物名称，快速判断是否可以同时服用。</p>
+    </header>
+
+    <main>
+      <section class="search-card">
+        <div class="input-group">
+          <label for="drug1">药物一</label>
+          <input id="drug1" type="text" placeholder="例如：阿司匹林" autocomplete="off" />
+        </div>
+
+        <div class="input-group">
+          <label for="drug2">药物二</label>
+          <input id="drug2" type="text" placeholder="例如：华法林" autocomplete="off" />
+        </div>
+
+        <button id="checkButton" type="button">查询相互作用</button>
+
+        <div id="result" class="result-box">
+          <p class="hint">请输入药物名称后点击“查询相互作用”。</p>
+        </div>
+      </section>
+
+      <section class="tips-card">
+        <h2>示例药物</h2>
+        <div class="tag-list" id="sampleTags"></div>
+        <p>本页面为示例查询工具，结果仅供参考，如需准确用药建议请咨询医生或药师。</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
